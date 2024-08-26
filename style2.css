@@ -1,0 +1,155 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+img{  
+    height: auto;
+    border-style:double;
+    border-radius: 18%;
+    box-shadow: 0 5px 15px rgba();
+    
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+}
+a:hover {
+    color: #11467e;
+    text-decoration: underline;
+}
+hr {
+    width: 70%; 
+    margin: 20px auto; 
+    border-top: 1px solid #ccc; 
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+p, a {
+    font-weight: 400;
+}
+header, footer {
+    background: linear-gradient(to right, #ab9bc0,#3285a8);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type:circle;
+    padding: 0;
+    text-align: center; /* Center align the list without flex */
+}
+ul li {
+    display: inline-block; /* Display list items inline for horizontal layout without flex */
+    background: #e1e3e6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0 5px; /* Add spacing between list items */
+    
+}
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left; /* Align form elements to the left */
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+.form-group label {
+    /* Make label a block element */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Full width for input and textarea */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+form button {
+    display:block; 
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px; /* Space above the button */
+    background-image: linear-gradient(to right,#7c52b3,#20a4dc);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.icon-link{
+    margin: 0 10px;
+    background-color:aliceblue;
+   
+} 
+
+.icon-link:hover {
+    transform: scale(1.1);
+    
+}
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skills-list li {
+    list-style-type: none;
+    background: #bcd3f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .skills-list {
+        flex-direction: column; /* Stacks skills vertically on smaller screens */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    header, footer {
+        padding: 15px; /* Adjusts padding for smaller screens */
+    }
+
+    section, form {
+        width: calc(100% - 20px); /* Adjusts width to ensure spacing on very small screens */
+        margin: 10px auto;
+    }
+
+    .icon-link {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px; /* Adjusts icon size and spacing for smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 16px; /* Adjusts heading sizes for better readability on small devices */
+    }
+}
